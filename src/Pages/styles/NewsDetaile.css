@@ -1,0 +1,60 @@
+.news_detailes_path{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 83.33vw;
+    margin: 0 auto;
+    margin-top: 1.19vw;
+}
+.news_detailes_title{
+    width: 76.82vw;
+    font-size: 1.25vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #113167;
+    line-height: 1.25vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5.93vw;
+}
+.news_detailes_time{
+    margin: 0 auto;
+    font-size: 0.93vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #666666;
+    height: 3.1vw;
+    line-height: 3.1vw;
+    border-bottom: 1px solid #C7C6C5;
+    text-align: center;
+    width: 76.82vw;
+}
+.news_detailes_left{
+    font-size: 0.625vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #7C7C7C;
+    line-height: 0.625vw;
+}
+.news_detailes_right{
+    font-size: 0.625vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #044A84;
+    line-height: 0.625vw;
+}
+.news_detailes_content{
+    width: 74.58vw;
+    font-size: 0.93vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.66vw;
+    margin: 0 auto;
+    margin-top: 1.56vw;
+}
+.news_detailes_img{
+    margin: 0 auto;
+    margin-top: 3.1vw;
+    width: 40vw;
+}

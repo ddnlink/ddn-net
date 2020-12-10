@@ -1,0 +1,37 @@
+.programme_title{
+    color: #C0CFDCFF;
+    font-family: 'ArialMT';
+    font-size: 17px;
+    line-height: 17px;
+}
+.programme_title_bar{
+    text-align: center;
+}
+.programme_title_sub3{
+    color: #343434FF;
+    font-size: 36px;
+    font-family: 'PingFangSC-Medium';
+    line-height: 36px;
+}
+.programme_title_sub{
+    color: #343434FF;
+    font-size: 36px;
+    font-family: 'PingFangSC-Medium';
+    margin-top: 14px;
+    line-height: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.programme_title_sub2{
+    color: #333333FF;
+    font-size: 20px;
+    font-family: 'PingFangSC-Regular';
+    margin-top: 29px;
+}
+.programme_title2{
+    color: #C0CFDCFF;
+    font-family: 'ArialMT';
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 9px;
+}

@@ -1,0 +1,82 @@
+.booking{
+    display: flex;
+    flex-direction: row;
+    padding-top:74px;
+    padding-bottom: 100px;
+    width: 1600px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.booking_banner{
+    height: 500px;
+    background-image: url("../../Resources/images/banner4.png");
+}
+.bookingtable{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.book_title{
+    color: #333333FF;
+    font-size: 40px;
+    font-family: 'PingFangSC-Semibold';
+    line-height: 40px;
+}
+.start{
+    color: #FF2F06FF;
+    font-size: 28px;
+    margin-right: 8px;
+    font-family: 'PingFangSC-Regular';
+}
+.bookingMessage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bookingContent{
+    color: #333333FF;
+    font-size: 26px;
+    font-family: 'PingFangSC-Regular';
+}
+.bookingInput{
+    width: 510px;
+    height: 66px;
+    line-height: 66px;
+    border: 1px solid #A0A0A0FF;
+    font-size: 26px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.book_detail{
+    height: 457px;
+    font-size: 28px;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #333333FF;
+    line-height: 86px;
+    margin-top: 80px;
+}
+.book_call{
+    width: 598px;
+    font-size: 24px;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #848484;
+    line-height: 50px;
+    margin-top: 100px;
+}
+.booking_save{
+    width: 510px;
+    height: 86px;
+    background: #264687;
+    border-radius: 8px;
+    font-size: 28px;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    text-align: center;
+    line-height: 86px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 10px;
+}

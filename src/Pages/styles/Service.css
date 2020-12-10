@@ -1,0 +1,61 @@
+.service_main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4.791vw;
+    width: 78.12vw;
+}
+.service_main_bg{
+width: 100%;
+padding-bottom: 5vw;
+background-color:#F2F6F9FF;
+}
+.service_main2{
+    background-color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4.791vw;
+    width: 78.12vw;
+    margin: 0 auto;
+}
+.service_sub_title{
+    height: 1vw;
+    font-size: 1vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #333333;
+    line-height: 1vw;
+    text-align: center;
+    margin-top: 1.19vw;
+}
+.service_Dapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5vw;
+    padding-bottom: 4.166vw;
+    width: 78.12vw;
+    margin: 0 auto;
+}
+.service_Dapp_content{
+    width: 34.11vw;
+    text-align: center;
+}
+.service_Dapp_title{
+    font-size: 1.77vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    line-height: 1.77vw;
+}
+.service_Dapp_text{
+    font-size: 1.14vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #6D6D6D;
+     margin-top: 1vw;
+    line-height: 2.6vw;
+    text-align: left;
+}

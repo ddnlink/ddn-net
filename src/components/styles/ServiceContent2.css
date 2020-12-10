@@ -1,0 +1,40 @@
+.service_title{
+    height: 1.77vw;
+    font-size: 1.77vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    line-height: 1.77vw;
+    margin-bottom: 2.08vw;
+}
+.service_text{
+    width: 30.06vw;
+    font-size: 1.14vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #6D6D6D;
+    line-height: 2.6vw;
+}
+.service_btn{
+    width: 10.41vw;
+    height: 3.125vw;
+    background: #264687;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    font-family: 'PingFangSC';
+    font-size: 1.14vw;
+    line-height: 3.125vw;
+}
+.service_btn2{
+    width: 10.41vw;
+    height: 3.125vw;
+    background: #fff;
+    border: 2px solid #264687;
+    border-radius: 8px;
+    text-align: center;
+    color: #264687FF;
+    font-family: 'PingFangSC';
+    font-size: 1.14vw;
+    line-height: 3.125vw;
+}

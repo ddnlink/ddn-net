@@ -1,0 +1,127 @@
+.Development_banner{
+    height: 36.45vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-size: 100% 100%;
+    background-image: url('../../Resources/images/DevelopmentBanner.png');
+}
+.Development_banner_title{
+    font-size: 2.18vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 2.18vw;
+}
+.Development_banner_sub{
+    width: 28.8vw;
+    font-size: 1vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 2.39vw;
+    margin-top: 2.08vw;
+}
+.Development_banner_left{
+    margin-left: 11.45vw;
+    padding-top: 9.9vw;
+}
+
+.Development_banner_img{
+    margin-right: 8.33vw;
+    width: 44.1vw;
+    margin-top: 4.27vw;
+    height: 27.96vw;
+}
+.development_icon{
+    width: 5.57vw;
+    height: 6.66vw;
+
+}
+.development_icon_title{
+    font-size: 1.45vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.45vw;
+    margin-top: 2.5vw;
+}
+.development_icon_sub{
+    width: 11.92vw;
+    font-size: 1vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #747474;
+    line-height: 1.92vw;
+    text-align: center;
+    margin-top: 1vw;
+}
+.development_icon_view{
+    width: 11.97vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.development_icon_bar{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    margin-top: 5.25vw;
+    margin-bottom: 6.51vw;
+    justify-content: space-between;
+    width: 72.91vw;
+}
+
+.datm{
+    width: 7.29vw;
+    height:  7.29vw;
+}
+.datm_title{
+    width: 8.85vw;
+    height: 2.6vw;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 2.6vw;
+    color: #fff;
+    font-size: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    margin-top: 1.3vw;
+}
+.datm_title_sub{
+    font-size: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 0.93vw;
+}
+.datm_number{
+    font-size: 2.13vw;
+    font-family: 'DINPro';
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 2.13vw;
+    margin:0 5px;
+}
+.datm_item{
+    display: flex;
+    flex-direction: 'row';
+    align-items: flex-end;
+    margin-top: 1.56vw;
+}
+.datm_bar{
+    height: 20.83vw;
+    background-image: url("../../Resources/images/DevelopmentBanner2.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.datm_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

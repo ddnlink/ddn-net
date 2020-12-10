@@ -1,0 +1,103 @@
+.existing_title{
+    font-size: 1.77vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    padding-top: 3.64vw;
+    line-height: 1.77vw;
+}
+.existing_title_sub{
+    font-size: 1.14vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #6D6D6D;
+    line-height: 2.18vw;
+    width: 34.73vw;
+    text-align: center;
+    margin-top: 1.56vw;
+}
+.existing_message_title{
+    font-size: 1.14vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    margin-right: 0.78vw;
+}
+.existing_input{
+    width: 46.25vw;
+    height: 26.97vw;
+    resize:none;
+    background: rgba(261,261,261,0);
+    outline:none;
+    border-radius: 6px;
+    font-size: 1.14vw;
+    border: 0;
+}
+nput::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #BDBDBDFF;
+}
+.existing_input_block{
+    padding-top: 1.3vw;
+    padding-left: 1.82vw;
+    width: 48.17vw;
+    height: 27.08vw;
+    background: rgba(261,261,261,0.3);
+    border: 1px solid #BFBFBF;
+    border-radius: 6px;
+}
+.existing_input2{
+    width: 46.25vw;
+    height: 26.97vw;
+    border: 0;
+    border-radius: 6px;
+    font-size: 1.14vw;
+    background: rgba(261,261,261,0);
+    resize:none;
+    outline:none;
+}
+.existing_input_block2{
+    padding-top: 1.3vw;
+    padding-left: 1.82vw;
+    width: 48.17vw;
+    height: 26.97vw;
+    background: rgba(261,261,261,0.3);
+    border: 1px solid #BFBFBF;
+    border-radius: 6px;
+}
+.existing_shi{
+    font-size: 1.25vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #898888;
+    line-height: 1.25vw;
+    margin-right: 4.63vw;
+}
+.existing_post{
+font-size: 1.25vw;
+font-family: 'PingFangSC';
+font-weight: 400;
+color: #033CB1;
+line-height: 1.25vw;
+}
+.existing_save{
+    width: 26.56vw;
+    height: 4.47vw;
+    background: #264687;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'PingFangSC-Regular';
+    font-size: 1.45vw;
+    text-align: center;
+    line-height: 4.47vw;
+    margin-bottom: 5.2vw;
+}
+.existing_bg{
+    width: 100%;
+    flex:1;
+    background-size:100% 100%;
+    background-image: url("../../Resources/images/bj.png");
+}
+.existing_bg_inner{
+    width: 100%;
+    background-color: rgba(261,261,261,0.8);
+}

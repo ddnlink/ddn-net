@@ -1,0 +1,32 @@
+.news_list_title{
+    font-size: 1.61vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #333333;
+    height: 7.29vw;
+    line-height: 7.29vw;
+    border-bottom: 1px solid #EAEAEA;
+    padding-left: 0.83vw;
+    padding-right:  0.83vw;
+}
+.news_list_view{
+    width: 72.91vw;
+    margin:0 auto;
+    padding-bottom: 3.125vw;
+}
+.news_list_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEAEA;
+    height: 5.72vw;
+    line-height: 5.72vw;
+}
+.news_list_text{
+    font-size: 0.83vw;
+    font-family: 'Microsoft YaHei';
+    padding-left: 0.83vw;
+    padding-right:  0.83vw;
+    font-weight: 400;
+    color: #333333;
+}

@@ -1,0 +1,31 @@
+.number_value_block{
+    width: 27.08vw;
+    text-align: center;
+}
+.pic6{
+    width: 27.08vw;
+    height: 18.08vw;
+}
+.number_value_title{
+    font-family: 'PingFangSC-Medium';
+    color: #535353FF;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    margin-top: 40px;
+}
+.number_value_content{
+    width: 19.16vw;
+    line-height: 1.77vw;
+    color: #6D6D6DFF;
+    font-family: 'PingFangSC-Regular';
+    font-size: 0.93vw;
+}
+.number_value{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83.33vw;
+    margin: 0 auto;
+    margin-top: 2.13vw;
+    margin-bottom: 2.86vw;
+}

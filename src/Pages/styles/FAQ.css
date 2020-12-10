@@ -1,0 +1,33 @@
+.FQA_title{
+    font-size: 1.45vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: bold;
+    color: #485783;
+    line-height: 1.45vw;
+    margin-bottom: 5.2vw;
+    text-align: center;
+}
+.FQA_Q{
+    height: 2.5vw;
+    background: #264687;
+    border-radius: 4px;
+    width: 64.27vw;
+    font-size: 1vw;
+    font-family: 'SourceHanSansCN';
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 2.5vw;
+    padding-left: 2.08vw;
+    margin-bottom: 2.34vw;
+}
+.FQA_A{
+    height: 0.83vw;
+    font-size: 0.83vw;
+    width: 64.27vw;
+    font-family: 'SourceHanSansCN';
+    font-weight: 400;
+    color: #264687;
+    line-height: 0.83vw;
+    padding-left: 2.08vw;
+    margin-bottom: 4.01vw;
+}

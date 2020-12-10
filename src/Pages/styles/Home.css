@@ -1,0 +1,282 @@
+
+.banner{
+    width: 100%;
+    height: 44.27vw;
+    background-size: 100% 100%;
+    background-image: url('../../Resources/images/banner.png');
+}
+
+.banner1{
+    width: 100%;
+    height: 44.27vw;
+    background-size: 100% 100%;
+    background-image: url('../../Resources/images/banner1.png');
+}
+.banner_title{
+    color: #fff;
+    font-size: 2.96vw;
+    line-height: 2.96vw;
+    font-family: 'Adobe Heiti Std R';
+}
+.banner_line{
+    height: 4px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #5629FF;
+    margin-top: 1vw;
+}
+.banner_title2{
+    color: #fff;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    font-family: 'Adobe Heiti Std R';
+    margin-top: 1.56vw;
+}
+.banner_title3{
+    color: #fff;
+    font-size: 0.78vw;
+    line-height: 0.78vw;
+    font-family: 'Adobe Heiti Std R';
+}
+.banner_content{
+    margin-left: 6.71vw;
+}
+.banner_btn{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7.08vw;
+    margin-top: 4.85vw;
+}
+.detaile{
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 1.87vw;
+    text-align: center;
+    color: #fff;
+    font-size: 1.45vw;
+    font-family: 'MicrosoftYaHei';
+    line-height: 3.43vw;
+    width: 11.35vw;
+    margin-right: 5.83vw;
+}
+.pic1{
+    width: 25.72vw;
+    height: 25.72vw;
+    margin-top: 7.5vw;
+}
+.data_bar{
+    display: flex;
+    flex-direction: row;
+    width: 78.12vw;
+    margin:0 auto;
+    padding-bottom: 6.35vw;
+    justify-content: space-between;
+}
+.icon_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon1{
+    width: 3.28vw;
+    height: 3.95;
+    margin-right: 1.77vw;
+}
+.data_title{
+    color: #666666FF;
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+    font-family: 'SourceHanSansCN-Regular';
+}
+.data_number{
+    color: #00284FFF;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 2.96vw;
+    line-height: 2.96vw;
+    margin-top: 1.19vw;
+}
+.data_bar_col{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin-top: 9.73vw;
+    justify-content: space-between;
+}
+.data_bar_inner{
+    padding-bottom: 2.6vw;
+    flex: 1;
+    margin-left: 5.2vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.success_project_bar{
+    width: 100%;
+    height: 31.25vw;
+    background-color: #264687;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.success_project_bar_title{
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: 'MicrosoftYaHei';
+    padding-top: 9.47vw;
+}
+.success_project_bar_sub{
+    color: #F5F7FAFF;
+    font-size: 0.83vw;
+    font-family: 'SourceHanSansCN-Light';
+    margin-top: 2.13vw;
+    width: 25.62vw;
+}
+
+.success_project_detaile{
+    background-color: #5BDCCCFF;
+    width: 11.56vw;
+    height: 2.96vw;
+    border-radius: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.9vw;
+    float: right;
+}
+.detaile_text{
+    font-size: 0.93vw;
+    font-family: 'SourceHanSansCN-Light';
+    color: #F5F7FAFF;
+}
+.home_dian{
+    width: 1.3vw;
+    margin-right: 0.67vw;
+}
+.photo_block{
+    margin-top: 5vw;
+}
+.cooperation_bar{
+    padding-bottom: 2vw;
+}
+.cooperation_title_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+}
+.cooperation_title{
+    font-size: 1.14vw;
+    font-family: 'SourceHanSansCN-ExtraLight';
+    color: #7DA6CBFF;
+    
+}
+.banner_pic{
+    width: 100%;
+    height: 44.27vw;
+}
+.cooperation_title_sub{
+    color: #17447BFF;
+    font-size: 1.87vw;
+    font-family: 'SourceHanSansCN-Medium';
+}
+.line{
+    height: 2px;
+    width: 8.43vw;
+}
+.cooperation{
+    width: 12vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.community{
+    height: 31.25vw;
+    background-color: #264687;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pic2{
+    height: 19.27vw;
+    width: 33.48vw;
+    margin-top: 5.41vw;
+}
+.community_content{
+    margin-top: 9.16vw;
+}
+
+.community_content_title{
+    font-size: 2.5vw;
+    color: #fff;
+    font-family: 'MicrosoftYaHei';
+
+}
+.community_content_sub{
+    font-size: 0.83vw;
+    color: #F5F7FAFF;
+    font-family: 'SourceHanSansCN-Light';
+    margin-top: 2.39vw;
+    width: 31.24vw;
+}
+
+.success_project_detaile2{
+    background-color: #5BDCCCFF;
+    width: 11.56vw;
+    height: 2.96vw;
+    border-radius: 29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.1vw;
+    margin-left: 18.95vw;
+}
+
+.home_banner .swiper-pagination-custom {
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    height: 1.04vw;
+    /* background-color: red; */
+    text-align: center;
+}
+/*自定义分页器的样式，这个你自己想要什么样子自己写*/
+.home_banner .swiper-pagination-bullet {
+    width: 1.4vw;
+    height: 1.4vw;
+    display:inline-block;
+    background-color: #fff !important;
+    border-radius: 50%;
+    /* box-shadow: 0 0 2px  #000; */
+    margin: 0 22px;
+     opacity: 1 !important;
+    outline: 0;
+}
+/*自定义分页器激活时的样式表现*/
+.home_banner .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 4.16vw;
+    height: 1.4vw;
+    border-radius: 13px;
+    background-color: #fff !important;
+}
+.partner_title{
+    position: absolute;
+    left: 4vw;
+    bottom: -2vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 2vw;
+    text-align:center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    line-height: 2vw;
+}
+.banner_2_title{
+    font-size: 5vw;
+    line-height: 5vw;
+    color: #fff;
+}

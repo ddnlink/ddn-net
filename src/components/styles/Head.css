@@ -1,0 +1,195 @@
+*{margin: 0;padding: 0;}
+.title{
+    color:red;
+}
+.logo{
+    height:  3.85vw;
+    margin-top: 1.6vw;
+}
+.head{
+    width: 100%;
+}
+.head_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 6.6vw;
+    width: 83.33vw;
+    margin: 0 auto;
+}
+.head_tab_line{
+    height: 2px;
+    background-color: #044A84FF;
+    margin-top: 1vw;
+}
+.head_tab_line2{
+    height: 2px;
+    margin-top: 1vw;
+}
+
+.tabBar{
+    height:  3.85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 57.291vw;
+    margin-top: 2vw;
+}
+.language{
+    border: 1px  solid #333;
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    line-height: 1.3vw;
+    text-align: center;
+    font-size: 0.57vw;
+    margin-bottom: 1vw;
+}
+.tab{
+    font-size: 1.09vw;
+    color: #333;
+    font-family: 'Adobe Heiti Std R';
+}
+.tab_active{
+    font-size: 1.09vw;
+    color: #044A84FF;
+    font-family: 'Adobe Heiti Std R';
+}
+.tab_list{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    position: absolute;
+    right: 15vw;
+    top: 5vw;
+    text-align: center;
+    border-radius: 3px;
+    display: none
+}
+.mini_tab_list{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    position: absolute;
+    right: 11vw;
+    top: 3vw;
+    text-align: center;
+    border-radius: 3px;
+    display: none
+}
+.tab_list2{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+    border-radius: 4px;
+    display: none
+}
+._onMouseOut:hover .tab_list  {
+    display: block
+}
+._onMouseOut2:hover .tab_list2  {
+    display: block
+}
+._onMouseOut3:hover .mini_tab_list  {
+    display: block
+}
+._onMouseOut4:hover .mini_tab_list2  {
+    display: block
+}
+.mini_tab_list2{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    position: absolute;
+    right: 2vw;
+    top: 3vw;
+    border-radius: 4px;
+    display: none;
+}
+.tab_list_btn{
+    font-size: 0.8vw;
+    color: #333;
+    line-height: 2vw;
+    display: left;
+}
+.tab_list_a{
+    text-decoration: 'none';
+    text-align:left;
+}
+.min_head_main2{
+    height: 3.9vw;
+    width: 100vw;
+    background-color: rgba(000, 000, 000, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+.min_head_main{
+    height: 3.9vw;
+    width: 100%;
+    background-color: rgba(000, 000, 000, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+}
+.mini_logo{
+    height: 2.35vw;
+}
+.mini_tabBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 57.291vw;
+}
+.mini_tab_active{
+    font-size: 0.9vw;
+    color: #5cb5ff;
+    font-family: 'Adobe Heiti Std R';
+}
+.mini_tab{
+    font-size: 0.9vw;
+    color: #fff;
+    font-family: 'Adobe Heiti Std R';
+}
+.mini_head_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83.33vw;
+    margin: 0 auto;
+    align-items: center;
+}
+.mini_language{
+    border: 1px  solid #fff;
+    width: 1.3vw;
+    height: 1.3vw;
+    border-radius: 50%;
+    line-height: 1.3vw;
+    text-align: center;
+    font-size: 0.57vw;
+    margin-bottom: 0.2vw;
+    color: #fff;
+}

@@ -1,0 +1,179 @@
+.ddn_detaile_banner{
+    background-image: url('../../Resources/images/DDNBanner.png');
+    padding-top: 3.64vw;
+    background-size: 100% 100%;
+    padding-bottom: 3vw;
+}
+.detaile_card{
+    height: 37.6vw;
+    width: 23.43vw;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 2px 7px 0px rgba(214, 214, 214, 0.67);
+}
+.detaile_card_img{
+    height: 20vw;
+    line-height: 20vw;
+    text-align: center;
+}
+.detaile_card_inner{
+    text-align: center;
+    padding-top: 1.5vw;
+}
+.detaile_card_content2{
+    width: 80%;
+    margin: 0 auto;
+}
+.detaile_card_title{
+    font-size: 1.45vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    line-height: 5.46vw;
+    height: 5.46vw;
+    text-align: center;
+    border-bottom: 1px solid #D6D6D6;
+    margin-top: 0.52vw;
+}
+.detaile_card_text{
+    font-size: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #656565;
+    line-height: 2.08vw;
+    margin-top: 2.08vw;
+}
+.detaile_card_view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 7vw;
+    padding-right:  7vw;
+    margin-top: 3.12vw;
+}
+.advantage_view{
+    padding-top: 4.01vw;
+}
+.advantage_card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.08vw;
+}
+.advantage_card_right{
+   width:20.83vw;
+   height: 20.83vw;
+    margin-left: -10.41vw;
+}
+.advantage_title{
+    font-size: 1.14vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    line-height: 1vw;
+    margin-top: 2.3vw;
+}
+.advantage_text{
+    width: 22.18vw;
+    font-size: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #656565;
+    line-height: 1.77vw;
+    margin-top: 1vw;
+    padding-right: 1vw;
+}
+.advantage_line{
+    width: 3.17vw;
+    height: 3px;
+    background-color: #005BA7;
+    margin-top: 1.1vw;
+}
+.advantage_card_left{
+    width: 33.85vw;
+    height: 20.833vw;
+    padding-left: 1.82vw;
+    background-color: #f5f5f5;
+}
+.advantage_card_main{
+    width: 83.33vw;
+    margin: 0 auto;
+    margin-top: 3.6vw;
+    display: flex;
+    flex-direction: column;
+}
+.advantage_card_block_right{
+    margin-top: 11.45vw;
+    margin-left: 1.71vw;
+}
+.technology_sub{
+    text-align: center;
+    font-size: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #333333;
+    line-height: 1.66vw;
+    width: 41.66vw;
+    margin: 0 auto;
+}
+.technology_title{
+    font-size: 0.93vw;
+    line-height: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 500;
+    color: #333333;
+    margin-top: 1.56vw;
+}
+.technology_card{
+    text-align: center;
+    width: 9.63vw;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2.08vw;
+    margin-bottom: 2.08vw;
+}
+.technology_card_view{
+    display: flex;
+    flex-direction: row;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+    margin-top: 2.08vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.technology_more{
+    width: 7.55vw;
+    height: 2.39vw;
+    font-size: 0.93vw;
+    font-family: 'PingFangSC';
+    font-weight: 400;
+    color: #264687;
+    border: 1px solid #264687;
+    border-radius: 3px;
+    line-height: 2.39vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4.16vw;
+    margin-top: 1vw;
+}
+
+.cross_sub{
+    width: 67.18vw;
+    line-height: 2.6vw;
+    font-size: 0.93vw;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1vw;
+}
+.cross_bg{
+    background-color: #eff4f7;
+    padding-top: 2.34vw;
+    padding-bottom: 3vw;
+}
+.computer{
+    width: 38.75vw;
+    height: 16.14vw;
+}
