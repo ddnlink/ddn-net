@@ -299,7 +299,7 @@ class Community extends React.Component {
                             <div className="jion_title_sub">Jion us</div>
                         </div>
                         <div className="jion_step">第一步</div>
-                        <div className="jion_net" style={{ marginBottom: '4.166vw' }}>访问DATM官网：http://www.datm.com,并在“下载”区域下载相关应用。</div>
+                        <div className="jion_net" style={{ marginBottom: '4.166vw' }}><a href="http://files.datm.link/DATM_Mobile_v2.0.1.apk">下载DATM</a></div>
                         <div className="jion_step">第二步</div>
                         <div className="jion_net">扫描下方二维码进入社区。</div>
                         <img src={Images.QrCode} className="jion_qr_code" />
