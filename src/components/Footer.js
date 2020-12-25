@@ -58,6 +58,7 @@ class Footer extends React.Component {
               <a href="http://wallet.ddn.link/" className='footer_tab'>手机版钱包</a>
               <a href="http://mainnet.ddn.link/" className='footer_tab'>主网区块链浏览器</a>
               <a href="http://testnet.ddn.link/" className='footer_tab'>测试区块链浏览器</a>
+              <a href="http://files.datm.link/DATM_Mobile_v2.0.1.apk" className='footer_tab'>DATM下载</a>
             </div>
             <div className='footer_tab_bar'>
               <div>

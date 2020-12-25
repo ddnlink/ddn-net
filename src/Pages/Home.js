@@ -35,7 +35,7 @@ class Home extends React.Component {
       media: [
         { id: 4, img: Images.media1, title: 'FN', show_title: false },
         { id: 8, img: Images.media2, title: '一灯社区', show_title: false },
-        { id: 1, img: Images.media3, title: '链叨叨', show_title: false },
+        { id: 1, img: Images.media3, title: '链想会', show_title: false },
         { id: 2, img: Images.media4, title: '电子时代', show_title: false },
         { id: 3, img: Images.media5, title: '链世界', show_title: false },
         { id: 5, img: Images.media6, title: '世链财经', show_title: false },
