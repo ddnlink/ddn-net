@@ -146,7 +146,7 @@ class Service extends React.Component {
                         name='service_content6'
                     />
                     <ServiceContent2
-                        title="DDU-UBL"
+                        title="DDN-UBL"
                         //btn={{title:"联系合作",path:'/'}}
                         //btn2={{title:"体验课程",path:'/'}}
                         content="高校区块链实验课程，由北京亿生生网络科技有限公司自主研发，完全独立自主知识产权，是面向高校推出的区块链科研新平台，专注于区块链教育教学、实验实训、人才培养，包含共识算法、P2P网络、交易、智能合约等模块，共计40多个实训任务。"
