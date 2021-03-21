@@ -45,13 +45,14 @@
 }
 .news_detailes_content{
     width: 74.58vw;
-    font-size: 0.93vw;
+    /* font-size: 0.93vw;
     font-family: 'Microsoft YaHei';
     font-weight: 400;
     color: #333333;
-    line-height: 1.66vw;
+    line-height: 1.66vw; */
     margin: 0 auto;
     margin-top: 1.56vw;
+    margin-bottom: 2vw;
 }
 .news_detailes_img{
     margin: 0 auto;

@@ -4,6 +4,8 @@ import Images from '../Resources/Image'
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
 import { withRouter, Link } from 'react-router-dom'
+import ApiRequest from '../Resources/Request';
+import moment from 'moment';
 class News extends React.Component {
     constructor(props) {
         super(props);
@@ -71,7 +73,19 @@ class News extends React.Component {
         };
     }
     componentDidMount() {
-        this.instanceSwiper();
+        let self = this;
+        ApiRequest.getTopNewsList().then(function(result){
+            console.log(result)
+            self.setState({news:result.data.data},function(){
+                self.instanceSwiper();
+            })
+        })
+        ApiRequest.getNewsList({'skip':1,'limit':4}).then(function(result){
+            console.log(result)
+            self.setState({
+                newslist:result.data.data.list
+            })
+        })
     }
     instanceSwiper() {
         let self = this;
@@ -117,13 +131,13 @@ class News extends React.Component {
         })
     }
 
-    _toPage(path) {
-        this.props.history.push(path)
+    _toPage(id) {
+        this.props.history.push({pathname :`/NewsDetaile/` ,query : { id: id}} )
     }
     _onMouseOver(id){
         let {newslist}=this.state
         this.state.newslist.forEach(function(item){
-            if(id==item.id){
+            if(id==item._id){
                 item.active=true
             }else{
                 item.active=false
@@ -145,8 +159,8 @@ class News extends React.Component {
                             <div className="swiper-wrapper">
                                 {news.map((item, index) => {
                                     return (<div className="swiper-slide">
-                                        <Link onClick={this._toPage.bind(this, item.path)}>
-                                            <img src={item.img} className="pic4" />
+                                        <Link onClick={this._toPage.bind(this, item._id)}>
+                                            <img src={item.banner} className="pic4" />
                                         </Link>
 
                                     </div>)
@@ -161,21 +175,19 @@ class News extends React.Component {
                     <div style={{ marginLeft: '6.66vw', marginTop: '3.28vw' }}>
                         {newslist.map((item, index) => {
                             return (
-                                <Link onMouseOver={this._onMouseOver.bind(this, item.id)} onClick={this._toPage.bind(this, item.path)} style={{ display: "flex", flexDirection: 'row', marginBottom: '1vw' }}>
+                                <Link key={index} onMouseOver={this._onMouseOver.bind(this, item._id)} onClick={this._toPage.bind(this, item._id)} style={{ display: "flex", flexDirection: 'row', marginBottom: '1vw' }}>
                                     <div className={item.active ? "news_date_active" : 'news_date'}>
-                                        <div className="news_month">{item.day}</div>
+                                        <div className="news_month">{moment(item.created_at).format('DD')}</div>
                                         <div className="news_line"></div>
-                                        <div className="news_day">{item.month}</div>
+                                        <div className="news_day">{moment(item.created_at).format('MM')}</div>
                                     </div>
                                     <div className={item.active ? "news_content_active" : 'news_content'}>
                                         <div className="news_content_title">{item.title}</div>
-                                        <div className="news_content_sub">{item.source}</div>
+                                        <div className="news_content_sub">内容来源：DDN</div>
                                     </div>
                                 </Link>
                             )
                         })}
-
-
                     </div>
                 </div>
             </div>
