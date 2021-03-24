@@ -56,7 +56,7 @@ class NewsList extends React.Component {
         })
     }
     _toDetaile(id){
-        this.props.history.push({pathname :`/NewsDetaile/` ,query : { id: id}} )
+        this.props.history.push({pathname :`/NewsDetaile/${id}` ,query : { id: id}} )
     }
     _goPage = page => {
         let {pageSize}=this.state;

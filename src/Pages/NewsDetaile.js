@@ -10,32 +10,27 @@ class NewsDetaile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data:{},
-            id:1
+            data: {},
+            id: 1
         };
     }
     componentDidMount() {
-        let self=this;
+        let self = this;
         document.getElementById('App').scrollIntoView(true);
-        console.log(this.props)
-        if(self.props.location.query){
-            window.localStorage.setItem("id",self.props.location.query.id)
-        }
-        let id=window.localStorage.getItem("id");
-        console.log(id)
-        ApiRequest.getNewsDetaile(id?id:32452218).then(function(result){
+        let id=this.props.match.params.id
+        ApiRequest.getNewsDetaile(id).then(function (result) {
             console.log(result)
             self.setState({
-                data:result.data.data
+                data: result.data.data
             })
         })
     }
     render() {
-        let{data}=this.state;
+        let { data } = this.state;
         return (
             <div style={{ display: "flex", flexDirection: 'column', justifyContent: 'space-between', height: '100vh' }}>
                 <Head />
-                <div style={{flex:1}}>
+                <div style={{ flex: 1 }}>
                     <img style={{ width: '100%', border: 'node', }} src={Images.NewsBanner} />
                     <div className="news_detailes_path">
                         <div className="news_detailes_left">首页 - 新闻中心 - </div>
@@ -45,7 +40,7 @@ class NewsDetaile extends React.Component {
                         <div className="news_detailes_title">{data.title}</div>
                         <div className="news_detailes_time">发布时间：{moment(data.created_at).format('DD/MM/YYYY')}</div>
                         <div className="news_detailes_content">
-                            <div dangerouslySetInnerHTML={{__html:data.body_html}}></div>
+                            <div dangerouslySetInnerHTML={{ __html: data.body_html }}></div>
                         </div>
                     </div>
                 </div>

@@ -25,7 +25,7 @@ class AppRouter extends React.Component {
                     <Route exact path="/TimeLine" component={Pages.TimeLine} />
                     <Route exact path="/FAQ" component={Pages.FAQ} />
                     <Route exact path="/News" component={Pages.NewsPage} />
-                    <Route exact path="/NewsDetaile" component={Pages.NewsDetaile} />
+                    <Route exact path="/NewsDetaile/:id" component={Pages.NewsDetaile} />
                     <Route exact path="/NewsDetaile1" component={Pages.NewsDetaile1} />
                     <Route exact path="/NewsDetaile2" component={Pages.NewsDetaile2} />
                     <Route exact path="/NewsDetaile3" component={Pages.NewsDetaile3} />

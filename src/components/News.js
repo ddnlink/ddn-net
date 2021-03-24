@@ -132,7 +132,7 @@ class News extends React.Component {
     }
 
     _toPage(id) {
-        this.props.history.push({pathname :`/NewsDetaile/` ,query : { id: id}} )
+        this.props.history.push({pathname :`/NewsDetaile/${id}`})
     }
     _onMouseOver(id){
         let {newslist}=this.state
