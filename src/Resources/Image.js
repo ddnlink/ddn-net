@@ -63,6 +63,7 @@ const Images = {
     Title_line1:require('./images/title_line1.png').default,
     Title_line2:require('./images/title_line2.png').default,
     Dapp:require('./images/dapp.png').default,
+    Ddnui:require('./images/ddnui.png').default,
     Service1:require('./images/service1.png').default,
     Service2:require('./images/service2.png').default,
     Service3:require('./images/service3.png').default,

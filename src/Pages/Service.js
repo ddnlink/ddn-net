@@ -36,6 +36,9 @@ class Service extends React.Component {
             banner6: [
                 { id: 6, path: Images.Service2 }
             ],
+            banner8: [
+                { id: 8, path: Images.Ddnui }
+            ],
             show_sub_head: false
         };
     }
@@ -60,7 +63,7 @@ class Service extends React.Component {
         this.props.history.push(path)
       }
     render() {
-        let { banner, banner2, banner3, banner4, banner5, banner6, show_sub_head } = this.state;
+        let { banner, banner2, banner3, banner4, banner5, banner6, banner8, show_sub_head } = this.state;
         return (
             <div>
                 <Head show_sub_head={show_sub_head} />
@@ -85,6 +88,19 @@ class Service extends React.Component {
                         <Link  onClick={this._toPage.bind(this, '/DDNDetaile')} >
                             <div style={{position:'absolute',right:'0vw',bottom:'-5vw',width:'8vw',height:'3vw',border:'1px solid #fff',borderRadius:8,color:'#fff',textAlign:'center',lineHeight:'3vw'}}>查看详情</div>
                         </Link>
+                    </div>
+                </div>
+                <div style={{ backgroundColor: '#F2F6F9FF', paddingBottom: '5vw' }}>
+                    <div className="service_main">
+                        <ServiceContent2
+                            title="DDN-UI"
+                            btn={{ title: "查看详情", path: 'http://ui.ddn.net/', out: true }}
+                            content="DDN 区块链可视化云平台，在线配置适合自己的区块链、侧链或智能合约，并在线进行打包、下载。自动检索新部署的区块链、侧链的全部节点，监控其地域、状态，实时掌握网络状况。帮助普通人部署节点服务器参与挖矿，帮助用户管理多个节点服务器及其各项配置"
+                        />
+                        <ServiceContent
+                            banner={banner8}
+                            name='service_content3'
+                        />
                     </div>
                 </div>
                 <div style={{ paddingBottom: '5vw' }}>
