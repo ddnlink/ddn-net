@@ -33,8 +33,8 @@ class NewsDetaile extends React.Component {
                 <div style={{ flex: 1 }}>
                     <img style={{ width: '100%', border: 'node', }} src={Images.NewsBanner} />
                     <div className="news_detailes_path">
-                        <div className="news_detailes_left">首页 - 新闻中心 - </div>
-                        <div className="news_detailes_right">公司新闻</div>
+                        <div className="news_detailes_left">首页 - 媒体中心 - </div>
+                        <div className="news_detailes_right">新闻</div>
                     </div>
                     <div>
                         <div className="news_detailes_title">{data.title}</div>

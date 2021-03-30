@@ -160,7 +160,7 @@ class News extends React.Component {
                                 {news.map((item, index) => {
                                     return (<div className="swiper-slide">
                                         <Link onClick={this._toPage.bind(this, item._id)}>
-                                            <img src={item.banner} className="pic4" />
+                                            <img src={item.cover} className="pic4" />
                                         </Link>
 
                                     </div>)
