@@ -17,6 +17,8 @@ export { default as NewsDetaile4 } from './NewsDetaile4';
 export { default as NewsDetaile5 } from './NewsDetaile5';
 export { default as NewsDetaile6 } from './NewsDetaile6';
 export { default as NewsList } from './NewsList';
+export { default as ArticlesDetail } from './ArticlesDetail';
+export { default as ArticlesList } from './ArticlesList';
 
 
 

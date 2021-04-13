@@ -75,11 +75,11 @@ const Request = {
   getNewsList(params) {
     return this.call2('/api/ddnNet/articles', 'get', params);
   },
-  getNewsDetaile(id) {
-    return this.call2('/api/ddnNet/articles/'+id, 'get', {});
+  getNewsDetaile(id, params) {
+    return this.call2('/api/ddnNet/articles/'+id, 'get', params);
   },
-  getTopNewsList() {
-    return this.call2('/api/ddnNet/articles/top', 'get', {});
+  getTopNewsList(params) {
+    return this.call2('/api/ddnNet/articles/top', 'get', params);
   },
   getFaqs() {
     return this.call2('/api/ddnNet/faqs', 'get', {});
@@ -96,10 +96,6 @@ const Request = {
   getCommunities() {
     return this.call2('/api/ddnNet/tasks/communities', 'get', {});
   },
-  
-  
- 
-  
 }
 
 export default Request;

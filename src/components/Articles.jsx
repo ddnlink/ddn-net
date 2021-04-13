@@ -6,7 +6,7 @@ import 'swiper/css/swiper.css';
 import { withRouter, Link } from 'react-router-dom'
 import ApiRequest from '../Resources/Request';
 import moment from 'moment';
-class News extends React.Component {
+class Articles extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -74,13 +74,13 @@ class News extends React.Component {
     }
     componentDidMount() {
         let self = this;
-        ApiRequest.getTopNewsList({}).then(function(result){
+        ApiRequest.getTopNewsList({'namespace': 19865854}).then(function(result){
             console.log(result)
             self.setState({news:result.data.data},function(){
                 self.instanceSwiper();
             })
         })
-        ApiRequest.getNewsList({'skip':1,'limit':4}).then(function(result){
+        ApiRequest.getNewsList({'namespace': 19865854,'skip':1,'limit':4}).then(function(result){
             console.log(result)
             self.setState({
                 newslist:result.data.data.list
@@ -111,7 +111,7 @@ class News extends React.Component {
                     var paginationHtml = " ";
                     paginationHtml += '<span class="' + className + '">' + (index + 1) + '</span>'
                     if (index == 2) {
-                        paginationHtml += `<a href="#/NewsList" class="more_news"><img src="${Images.Dian}" class="dian3" /></a>`
+                        paginationHtml += `<a href="#/ArticlesList" class="more_news"><img src="${Images.Dian}" class="dian3" /></a>`
                     }
                     return paginationHtml;
                 },
@@ -132,7 +132,7 @@ class News extends React.Component {
     }
 
     _toPage(id) {
-        this.props.history.push({pathname :`/NewsDetaile/${id}`})
+        this.props.history.push({pathname :`/ArticlesDetail/${id}`})
     }
     _onMouseOver(id){
         let {newslist}=this.state
@@ -150,8 +150,8 @@ class News extends React.Component {
         return (
             <div className="news_bar">
                 <div style={{ display: "flex", flexDirection: 'column', alignItems: 'center', marginTop: '2.81vw' }}>
-                    <div className="news_title_sub">Customer service</div>
-                    <div className="news_title">新闻中心</div>
+                    <div className="news_title_sub">Technology Share</div>
+                    <div className="news_title">技术分享</div>
                 </div>
                 <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'space-between', width: '70.31vw',marginLeft:'10vw' }}>
                     <div className="news_swiper" style={{ width: '37.18vw', height: '21.56vw', marginTop: '3.28vw', position: 'relative' }}>
@@ -194,7 +194,7 @@ class News extends React.Component {
         );
     }
 }
-News.propTypes = {
+Articles.propTypes = {
 };
 
-export default withRouter(News);
+export default withRouter(Articles);

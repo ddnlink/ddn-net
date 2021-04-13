@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import { withRouter, Link } from 'react-router-dom'
 import moment from 'moment';
 import ApiRequest from '../Resources/Request';
-class NewsDetaile extends React.Component {
+class ArticlesDetail extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,7 +18,7 @@ class NewsDetaile extends React.Component {
         let self = this;
         document.getElementById('App').scrollIntoView(true);
         let id=this.props.match.params.id
-        ApiRequest.getNewsDetaile(id, {}).then(function (result) {
+        ApiRequest.getNewsDetaile(id, {'namespace': 19865854}).then(function (result) {
             console.log(result)
             self.setState({
                 data: result.data.data
@@ -34,7 +34,7 @@ class NewsDetaile extends React.Component {
                     <img style={{ width: '100%', border: 'node', }} src={Images.NewsBanner} />
                     <div className="news_detailes_path">
                         <div className="news_detailes_left">首页 - 媒体中心 - </div>
-                        <div className="news_detailes_right">新闻</div>
+                        <div className="news_detailes_right">技术分享</div>
                     </div>
                     <div>
                         <div className="news_detailes_title">{data.title}</div>
@@ -50,7 +50,7 @@ class NewsDetaile extends React.Component {
     }
 }
 
-NewsDetaile.propTypes = {
+ArticlesDetail.propTypes = {
 };
 
-export default withRouter(NewsDetaile);
+export default withRouter(ArticlesDetail);
