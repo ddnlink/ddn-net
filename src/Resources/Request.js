@@ -81,6 +81,25 @@ const Request = {
   getTopNewsList() {
     return this.call2('/api/ddnNet/articles/top', 'get', {});
   },
+  getFaqs() {
+    return this.call2('/api/ddnNet/faqs', 'get', {});
+  },
+  getTopContributors() {
+    return this.call2('/api/ddnNet/tasks/topContributors', 'get', {});
+  },
+  getTasks() {
+    return this.call2('/api/ddnNet/tasks/', 'get', {});
+  },
+  getBounties() {
+    return this.call2('/api/ddnNet/tasks/bounties', 'get', {});
+  },
+  getCommunities() {
+    return this.call2('/api/ddnNet/tasks/communities', 'get', {});
+  },
+  
+  
+ 
+  
 }
 
 export default Request;

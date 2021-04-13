@@ -12,8 +12,8 @@ class Service extends React.Component {
         super(props);
         this.state = {
             banner: [
-                { id: 1, path: Images.Pic20 },
-                { id: 2, path: Images.service15 },
+                { id: 13, path: Images.Pic20 },
+                { id: 14, path: Images.service15 },
             ],
             banner2: [
                 { id: 1, path: Images.Service },
@@ -22,22 +22,22 @@ class Service extends React.Component {
                 { id: 4, path: Images.liulanqi6 }
             ],
             banner3: [
-                { id: 1, path: Images.liulanqi1 },
-                { id: 2, path: Images.liulanqi2 },
-                { id: 3, path: Images.liulanqi3 },
-                { id: 4, path: Images.liulanqi4 }
+                { id: 5, path: Images.liulanqi1 },
+                { id: 6, path: Images.liulanqi2 },
+                { id: 7, path: Images.liulanqi3 },
+                { id: 8, path: Images.liulanqi4 }
             ],
             banner4: [
-                { id: 4, path: Images.Service4 }
+                { id: 9, path: Images.Service4 }
             ],
             banner5: [
-                { id: 5, path: Images.Service1 }
+                { id: 10, path: Images.Service1 }
             ],
             banner6: [
-                { id: 6, path: Images.Service2 }
+                { id: 11, path: Images.Service2 }
             ],
             banner8: [
-                { id: 8, path: Images.Ddnui }
+                { id: 12, path: Images.Ddnui }
             ],
             show_sub_head: false
         };

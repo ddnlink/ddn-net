@@ -27,13 +27,14 @@ class ServiceContent extends React.Component {
                 type: 'custom',
                 autoplayDisableOnInteraction: false,
                 renderCustom: function (swiper, current, total) {
+                    console.log(total)
                     var paginationHtml = "";
                     for (var i = 0; i < total; i++) {
                         // 判断是不是激活焦点，是的话添加active类，不是就只添加基本样式类
                         if (i === (current - 1)) {
-                            paginationHtml += '<div style="margin-right:1px;padding:0;" class="swiper-pagination-customs swiper-pagination-customs-active"><img src="' + banner[i].path + '"  class="min_banner_active" /></div>';
+                            paginationHtml += banner[i]?'<div style="margin-right:1px;padding:0;" class="swiper-pagination-customs swiper-pagination-customs-active"><img src="' + banner[i].path + '"  class="min_banner_active" /></div>':"";
                         } else {
-                            paginationHtml += '<div style="margin-right:1px;padding:0;" class="swiper-pagination-customs"><img src="' + banner[i].path + '"  class="min_banner" /></div>';
+                            paginationHtml += banner[i]?'<div style="margin-right:1px;padding:0;" class="swiper-pagination-customs"><img src="' + banner[i].path + '"  class="min_banner" /></div>':"";
                         }
                     }
                     return is_banners?paginationHtml:"";

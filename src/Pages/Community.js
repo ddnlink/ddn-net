@@ -9,6 +9,7 @@ import ServiceContent2 from '../components/ServiceContent2';
 import Sidebar from '../components/Sidebar';
 import { withRouter, Link } from 'react-router-dom';
 import Swiper from 'swiper';
+import ApiRequest from '../Resources/Request';
 class Community extends React.Component {
     constructor(props) {
         super(props);
@@ -17,35 +18,10 @@ class Community extends React.Component {
                 { id: 4, path: Images.Service4 }
             ],
             photos: [
-               {id:1,img: Images.Photo1,name:'未完的未完。',show_name:false},
-               {id:2,img: Images.Photo2,name:'Evan',show_name:false},
-               {id:3,img: Images.Photo3,name:'加州之梦',show_name:false},
-               {id:4,img: Images.Photo4,name:'十二因缘',show_name:false},
-               {id:5,img: Images.Photo5,name:'bpgoing',show_name:false},
-               {id:6,img: Images.Photo6,name:'灯光后业',show_name:false},
-               {id:7,img: Images.Photo7,name:'丑丑',show_name:false},
-               {id:8,img: Images.Photo8,name:'Tailor',show_name:false},
-               {id:9,img: Images.Photo9,name:'树',show_name:false},
-               {id:10,img: Images.Photo10,name:'Erica',show_name:false},
+                { id: 1, img: Images.Photo1, name: '未完的未完。', show_name: false },
             ],
-            projects: [
-                { id: '01', title: '文档翻译-DDN社区', text: '将未翻译的文档，进行多语言翻译' },
-                { id: '02', title: '文案撰写-DDN社区', text: '针对下一期的链想会，编写海报宣传文案' },
-                { id: '03', title: '海报制作-DDN社区', text: '针对下一场链想会，制作对应海报' },
-                { id: '04', title: '应用测试-DDN社区', text: '对即将发版的DDN钱包，进行功能测试' },
-                { id: '05', title: '方案编写-DDN社区', text: '根据不同场景，编写解决方案' },
-                { id: '06', title: 'App开发-DDN社区', text: '根据新版DATM原型，开发新版的DATM手机端应用' },
-            ],
-            contribution: [
-                { id: 1, name: '张**', text: '通过文档翻译任务', money: 100 },
-                { id: 1, name: '青**', text: '通过钱包测试任务', money: 50 },
-                { id: 1, name: '石**', text: '通过文案撰写任务', money: 100 },
-                { id: 1, name: 'So**', text: '通过移动端开..任务', money: 100 },
-                { id: 1, name: '吴**', text: '通过bug修复任务', money: 200 },
-                { id: 1, name: '小**', text: '通过文档更新任务', money: 50 },
-                { id: 1, name: '萌**', text: '通过海报图任务', money: 100 },
-                { id: 1, name: '魏**', text: '通过社群宣发任务', money: 200 },
-            ],
+            projects: [],
+            contribution: [],
             sidebar_tabs: [
                 { title: '贡献动态', active: false, scrollTop: 550 },
                 { title: '贡献成员', active: false, scrollTop: 1060 },
@@ -57,13 +33,14 @@ class Community extends React.Component {
                 { title: '发展历程', active: false, scrollTop: 5350 },
                 { title: '加入社区', active: false, scrollTop: 6200 },
             ],
+            qrcode: [],
             community_swiper: [
                 { title: 'DDN链底层', content: 'DDN底层链核心项目，项目由DDN社区创建，社区成员可由DATM申请加入到项目，领取任务，加入到项目的开发。代码已在github开源。' },
                 { title: '区块链浏览器', content: 'DDN区块浏览器应用项目，提供用户浏览与查询区块链所有信息的工具，项目使用NodeJs开发语言，React框架' },
                 { title: '区块链钱包', content: '区块链钱包里储存着我们的DDN信息，包括DDN地址（类似于你的银行卡账号）、私钥（类似于你的银行卡密码），区块链钱包可以储存多个DDN地址以及每个DDN地址所对应的独立私钥。项目使用NodeJs开发语言，React框架' },
             ],
             show_sub_head: null,
-            
+
 
         };
     }
@@ -114,32 +91,57 @@ class Community extends React.Component {
         var mySwiper = new Swiper('.community_swiper .swiper-container', {
             autoplay: true,//可选选项，自动滑动
             loop: true,
-            speed:1000,
+            speed: 1000,
+        })
+        Promise.all([
+            ApiRequest.getTopContributors(),
+            ApiRequest.getTasks(),
+            ApiRequest.getBounties(),
+            ApiRequest.getCommunities()
+        ]).then(function (results) {
+            let photos = results[0].data.data;
+            let contribution = results[1].data.data;
+            let projects = results[2].data.data;
+            let qrcode = results[3].data.data
+            console.log(results)
+            photos.forEach(function (item, index) {
+                item.id = index;
+                item.show_name = false;
+            })
+            projects.forEach(function (item, index) {
+                item.id = index + 1;
+            })
+            self.setState({
+                photos: photos,
+                contribution: contribution,
+                projects: projects,
+                qrcode: qrcode
+            })
         })
 
+
     }
-    _showName(data,id){
-        console.log('jjjj')
-        let {photos}=this.state;
-        if(data){
-            photos.forEach(function(item){
-                if(item.id==id){
-                    item.show_name=true
-                }else{
-                    item.show_name=false
+    _showName(data, id) {
+        let { photos } = this.state;
+        if (data) {
+            photos.forEach(function (item) {
+                if (item.id == id) {
+                    item.show_name = true
+                } else {
+                    item.show_name = false
                 }
             })
-        }else{
-            photos.forEach(function(item){
-                item.show_name=false
+        } else {
+            photos.forEach(function (item) {
+                item.show_name = false
             })
         }
         this.setState({
-            photos:photos
+            photos: photos
         })
     }
     render() {
-        let { photos, banner4, projects, contribution, sidebar_tabs, show_sub_head, community_swiper } = this.state;
+        let { photos, banner4, projects, qrcode,contribution, sidebar_tabs, show_sub_head, community_swiper } = this.state;
         return (
             <div>
                 <Head show_sub_head={show_sub_head} />
@@ -156,10 +158,10 @@ class Community extends React.Component {
                         return (
                             <div key={index} className="contribution_item">
                                 <div className="dian"></div>
-                                <div className="contribution_name" style={{ marginRight: '1.34vw' }}>{item.name}</div>
-                                <div className="contribution_name" style={{ marginRight: '0vw' }}>{item.text}</div>
+                                <div className="contribution_name" style={{ marginRight: '1.34vw' }}>{item.user.name}</div>
+                                <div className="contribution_name" style={{ marginRight: '0vw' }}>{item.title}</div>
                                 <div className="contribution_name">已到账</div>
-                                <div className="contribution_name" style={{ color: '#006BE3FF' }}>{item.money}DDN</div>
+                                <div className="contribution_name" style={{ color: '#006BE3FF' }}>{item.reward.amount}{item.reward.token}</div>
                             </div>
                         )
                     })}
@@ -169,8 +171,8 @@ class Community extends React.Component {
                     {photos.map((item, index) => {
                         return (
                             <div className="community_photo_block"   >
-                                <img key={index} src={item.img} onMouseOver={this._showName.bind(this,true,item.id)} onMouseOut={this._showName.bind(this,false,item.id)} className="community_photo" />
-                                {item.show_name?(<div className="community_photo_name">{item.name}</div>):null}
+                                <img key={index} src={item.photoUrl} onMouseOver={this._showName.bind(this, true, item.id)} onMouseOut={this._showName.bind(this, false, item.id)} className="community_photo" />
+                                {item.show_name ? (<div className="community_photo_name">{item.name}</div>) : null}
                             </div>
                         )
                     })}
@@ -209,10 +211,10 @@ class Community extends React.Component {
                     {projects.map((item, index) => {
                         return (
                             <div key={index} className={index == (projects.length - 1) || index == (projects.length - 2) ? 'community_number_block_last' : 'community_number_block'}>
-                                <div className="community_number">{item.id}.</div>
+                                <div className="community_number">0{item.id}.</div>
                                 <div className="community_number_right">
-                                    <div className="community_number_title">{item.title}</div>
-                                    <div className="community_number_sub">{item.text}</div>
+                                    <div className="community_number_title">{item.bountyType}{item.community.name}</div>
+                                    <div className="community_number_sub">{item.title}</div>
                                 </div>
                             </div>
                         )
@@ -221,22 +223,19 @@ class Community extends React.Component {
                 <Title2 title="Community invitation" title_sub="优秀社区" />
                 <div className="invitation_sub">这里有上百优秀小伙伴，诚邀您的加入哦</div>
                 <div className="invitation_qrcode_bar">
-                    <div className="invitation_qrcode_block">
-                        <img className="invitation_qrcode" src={Images.QrCode} />
-                        <div className="invitation_qrcode_title" >DDN社区</div>
-                    </div>
-                    <div className="invitation_qrcode_block">
-                        <img className="invitation_qrcode" src={Images.QrCode} />
-                        <div className="invitation_qrcode_title" >LIMSChain社区</div>
-                    </div>
-                    <div className="invitation_qrcode_block">
-                        <img className="invitation_qrcode" src={Images.QrCode} />
-                        <div className="invitation_qrcode_title" >国标链社区</div>
-                    </div>
+                    {qrcode.map((item, index) => {
+                        return (
+                            <div className="invitation_qrcode_block">
+                                <img className="invitation_qrcode" src={item.qrcode} />
+                                <div className="invitation_qrcode_title" >{item.name}</div>
+                            </div>
+                        )
+                    })}
+
                 </div>
                 <div className="CommunityBannerbg2">
                     <div className="community_money_title">基金公开透明</div>
-                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between',width:'72.91vw',margin:'0 auto' }}>
+                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '72.91vw', margin: '0 auto' }}>
                         <div className="community_money_block">
                             <div className="community_money_sub">DDN社区</div>
                             <div className="community_money_bar" >
