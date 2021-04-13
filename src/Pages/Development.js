@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { withRouter, Link } from 'react-router-dom';
 import ServiceContent2 from '../components/ServiceContent2';
 import ServiceContent from '../components/ServiceContent';
+import Articles from '../components/Articles';
 class Development extends React.Component {
     constructor(props) {
         super(props);
@@ -114,6 +115,7 @@ class Development extends React.Component {
                         content="区块链属于近年新兴的概念，还未被人员广泛知晓，区块链技术相关资料相对匮乏，学习上手门槛相对较高。针对以上问题，DDN自主研发了DDN-UBL，区块链实验课程，专注于区块链教育教学、实验实训、人才培养，包含共识算法、P2P网络、交易、智能合约等模块，共计40多个实训任务，带你零门槛学习区块链技术，掌握区块链开发技能，跻身技术前沿。"
                     />
                 </div>
+                <Articles />
                 <Footer />
             </div>
         );

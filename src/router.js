@@ -32,8 +32,10 @@ class AppRouter extends React.Component {
                     <Route exact path="/NewsDetaile4" component={Pages.NewsDetaile4} />
                     <Route exact path="/NewsDetaile5" component={Pages.NewsDetaile5} />
                     <Route exact path="/NewsDetaile6" component={Pages.NewsDetaile6} />
-                    
+
                     <Route exact path="/NewsList" component={Pages.NewsList} />
+                    <Route exact path="/ArticlesDetail/:id" component={Pages.ArticlesDetail} />
+                    <Route exact path="/ArticlesList" component={Pages.ArticlesList} />
                 </Route>
             </HashRouter>
         )
