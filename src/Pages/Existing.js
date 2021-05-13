@@ -36,7 +36,7 @@ class Existing extends React.Component {
         var sizeStr = size + "";                        //转成字符串
         var index = sizeStr.indexOf(".");                    //获取小数点处的索引
         var dou = sizeStr.substr(index + 1, 2)            //获取小数点后两位的值
-        if (dou == "00") {                                //判断后两位是否为00，如果是则删除00                
+        if (dou == "00") {                                //判断后两位是否为00，如果是则删除00
             return sizeStr.substring(0, index) + sizeStr.substr(index + 3, 2)
         }
         return size;
@@ -55,7 +55,7 @@ class Existing extends React.Component {
             author: 'Online',
             size: newLimit, // 文档的大小
             type: 'text',
-            url: 'ddn.link',
+            url: 'ddn.net',
             tags: 'evidence',
             ext: 'china',
             ext1: 12345,
@@ -66,7 +66,7 @@ class Existing extends React.Component {
         console.log(transaction)
         const trs = JSON.stringify({ transaction });
         console.log(trs);
-       
+
         const peer_host = 'http://106.15.227.133:8001';
         const url = `${peer_host}/peer/transactions`;
         let config = {
@@ -86,7 +86,7 @@ class Existing extends React.Component {
           }).catch(err => {
             return err;
           });
-        
+
     }
     _getContent(e) {
         this.setState({
@@ -119,7 +119,7 @@ class Existing extends React.Component {
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'row', marginTop: '1.3vw', marginLeft: '32.81vw',paddingBottom:'5vw' }}>
                             <div className="existing_shi">没有私钥?</div>
-                            <a href='http://wallet.ddn.link/' className="existing_post">注册钱包</a>
+                            <a href='http://wallet.ddn.net/' className="existing_post">注册钱包</a>
                         </div>
                         {/* <div onClick={this._save.bind(this)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '6.25vw' }}>
                             <div className="existing_save">存 证</div>

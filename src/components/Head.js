@@ -167,9 +167,9 @@ class Head extends React.Component {
                   <div className="mini_tab">钱包</div>
                 </Link>
                 <div className="mini_tab_list">
-                  <a href="http://wallet.ddn.link/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">主网钱包</div></a>
-                  <a href="http://wallet.testnet.ddn.link/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">测试网钱包</div></a>
-                  <a href="http://wallet.ddn.link/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">手机版钱包</div></a>
+                  <a href="http://wallet.ddn.net/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">主网钱包</div></a>
+                  <a href="http://wallet.testnet.ddn.net/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">测试网钱包</div></a>
+                  <a href="http://wallet.ddn.net/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">手机版钱包</div></a>
                 </div>
               </div>
               <div className="_onMouseOut4">
@@ -177,12 +177,12 @@ class Head extends React.Component {
                   <div className="mini_tab">浏览器</div>
                 </Link>
                 <div className="mini_tab_list2">
-                  <a href="http://mainnet.ddn.link/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">主网区块链浏览器</div></a>
-                  <a href="http://testnet.ddn.link/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">测试网区块链浏览器</div></a>
+                  <a href="http://mainnet.ddn.net/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">主网区块链浏览器</div></a>
+                  <a href="http://testnet.ddn.net/" style={{ textDecoration: 'none' }}> <div className="tab_list_btn">测试网区块链浏览器</div></a>
                 </div>
               </div>
 
-               
+
               {/* <div className="mini_language">EN</div> */}
             </div>
           </div>
@@ -207,9 +207,9 @@ class Head extends React.Component {
                       <div className="head_tab_line2"></div>
                     </Link>
                     <div className="tab_list">
-                      <a href="http://wallet.ddn.link/" className="tab_list_a" > <div className="tab_list_btn">主网钱包</div></a>
-                      <a href="http://wallet.testnet.ddn.link/" className="tab_list_a"  > <div className="tab_list_btn">测试网钱包</div></a>
-                      <a href="http://wallet.ddn.link/" className="tab_list_a"  > <div className="tab_list_btn">手机版钱包</div></a>
+                      <a href="http://wallet.ddn.net/" className="tab_list_a" > <div className="tab_list_btn">主网钱包</div></a>
+                      <a href="http://wallet.testnet.ddn.net/" className="tab_list_a"  > <div className="tab_list_btn">测试网钱包</div></a>
+                      <a href="http://wallet.ddn.net/" className="tab_list_a"  > <div className="tab_list_btn">手机版钱包</div></a>
                     </div>
                   </div>
 
@@ -219,8 +219,8 @@ class Head extends React.Component {
                       <div className="head_tab_line2"></div>
                     </Link>
                     <div className="tab_list2">
-                      <a href="http://mainnet.ddn.link/" className="tab_list_a"  > <div className="tab_list_btn">主网区块链浏览器</div></a>
-                      <a href="http://testnet.ddn.link/" className="tab_list_a"  > <div className="tab_list_btn">测试网区块链浏览器</div></a>
+                      <a href="http://mainnet.ddn.net/" className="tab_list_a"  > <div className="tab_list_btn">主网区块链浏览器</div></a>
+                      <a href="http://testnet.ddn.net/" className="tab_list_a"  > <div className="tab_list_btn">测试网区块链浏览器</div></a>
                     </div>
                   </div>
                   {/* <div className="language">EN</div> */}

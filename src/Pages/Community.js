@@ -50,7 +50,7 @@ class Community extends React.Component {
         // var point = new BMap.Point(110.321027, 21.113632);
         // map.centerAndZoom(point, 16); // 初始化地图,设置中心点坐标和地图级别
         // var driving = new BMap.DrivingRoute(map, { renderOptions: { map: map, autoViewport: true } });
-        // var marker = new BMap.Marker(point);        // 创建标注    
+        // var marker = new BMap.Marker(point);        // 创建标注
         // map.addOverlay(marker);
         document.getElementById('App').scrollIntoView(true);
         let { sidebar_tabs, show_sub_head } = this.state;
@@ -149,7 +149,7 @@ class Community extends React.Component {
                     <div className="community_text_block">
                         <div className="community_title">DDN社区是什么</div>
                         <div className="community_text">DDN全球社区将首先实践DDN“去中心、去组织、去管理”的理念。按功能划分，DDN全球社区包含节点管理、技术开发、运营管理、市场推广4个等多个子板，已推出DDN社区管理《绿皮书》正式版，面向全球招募开发、运营、管理和翻译团队。</div>
-                        <a href="http://docs.ddn.link/zh-CN/community/greenpaper" style={{ textDecoration: 'none', display: "block" }} className="community_banner_btn">绿皮书</a>
+                        <a href="http://docs.ddn.net/zh-CN/community/greenpaper" style={{ textDecoration: 'none', display: "block" }} className="community_banner_btn">绿皮书</a>
                     </div>
                 </div>
                 <Title2 title="Contribution dynamics" title_sub="贡献动态" />
@@ -184,7 +184,7 @@ class Community extends React.Component {
                     />
                     <ServiceContent2
                         title="分布式云办公-DATM"
-                        btn={{ title: "查看详情", path: 'http://datm.ddn.link/', out: true }}
+                        btn={{ title: "查看详情", path: 'http://datm.ddn.net/', out: true }}
                         content="&nbsp;&nbsp;&nbsp;&nbsp;分布式团队远程协作利器远程协作，实时通讯，有效沟通，团队协作，任务管理，特色社区，海量任务，各行各业都有我们的身影，随时随地，移动办公。"
                     />
                 </div>

@@ -178,7 +178,7 @@ class Home extends React.Component {
                   </div>
                   <div className="banner_btn">
                     <Link to="/DDNDetaile" className="detaile">查看详情</Link>
-                    <a href="http://docs.ddn.link" className="detaile">快速上手</a>
+                    <a href="http://docs.ddn.net" className="detaile">快速上手</a>
                   </div>
                 </div>
               </div>

@@ -53,11 +53,11 @@ class Footer extends React.Component {
                 <div className="footer_title_line"></div>
               </div>
               <Link to="/Service" className='footer_tab' onClick={this._toPage.bind(this, '/Service')}>信息</Link>
-              <a href="http://wallet.ddn.link/" className='footer_tab'>主网钱包</a>
-              <a href="http://wallet.testnet.ddn.link/" className='footer_tab'>测试网钱包</a>
-              <a href="http://wallet.ddn.link/" className='footer_tab'>手机版钱包</a>
-              <a href="http://mainnet.ddn.link/" className='footer_tab'>主网区块链浏览器</a>
-              <a href="http://testnet.ddn.link/" className='footer_tab'>测试区块链浏览器</a>
+              <a href="http://wallet.ddn.net/" className='footer_tab'>主网钱包</a>
+              <a href="http://wallet.testnet.ddn.net/" className='footer_tab'>测试网钱包</a>
+              <a href="http://wallet.ddn.net/" className='footer_tab'>手机版钱包</a>
+              <a href="http://mainnet.ddn.net/" className='footer_tab'>主网区块链浏览器</a>
+              <a href="http://testnet.ddn.net/" className='footer_tab'>测试区块链浏览器</a>
               <a href="http://files.datm.link/DATM_Mobile_v2.0.1.apk" className='footer_tab'>DATM下载</a>
             </div>
             <div className='footer_tab_bar'>
@@ -65,8 +65,8 @@ class Footer extends React.Component {
                 <div className="footer_tab_title">开发者</div>
                 <div className="footer_title_line"></div>
               </div>
-              <a href="http://docs.ddn.link/zh-CN" className='footer_tab'>快速入门</a>
-              <a href="http://docs.ddn.link/zh-CN/api" className='footer_tab'>API文档</a>
+              <a href="http://docs.ddn.net/zh-CN" className='footer_tab'>快速入门</a>
+              <a href="http://docs.ddn.net/zh-CN/api" className='footer_tab'>API文档</a>
               <a href="https://github.com/ddnlink/ddn" className='footer_tab'>GitHub</a>
               <Link className='footer_tab' onClick={this._toPage.bind(this, '/FAQ')}>FAQ</Link>
             </div>
@@ -75,12 +75,12 @@ class Footer extends React.Component {
                 <div className="footer_tab_title">联系我们</div>
                 <div className="footer_title_line"></div>
               </div>
-              <div className='footer_tab'>operation@ddn.link</div>
-              <div className='footer_tab'>support@ddn.link</div>
+              <div className='footer_tab'>operation@ddn.net</div>
+              <div className='footer_tab'>support@ddn.net</div>
             </div>
           </div>
           </div>
-         
+
         </div>
         <div className="footer_bottom">
           <div className="footer_date">©2020 by DDN FOUNDATION All Rights Reserved</div>

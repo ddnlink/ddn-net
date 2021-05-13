@@ -34,9 +34,9 @@ class NewsDetaile extends React.Component {
                             02
                             DDN主网上线时间：2017年12月20日
                             03
-                            DDN官网：http://ddn.link
+                            DDN官网：http://ddn.net
                             04
-                            DDN核心链主网：http://mainnet.ddn.link
+                            DDN核心链主网：http://mainnet.ddn.net
                             05
                             DDN源码库：https://github.com/ddnlink
                             06

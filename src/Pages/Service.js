@@ -111,7 +111,7 @@ class Service extends React.Component {
                         />
                         <ServiceContent2
                             title="区块链浏览器"
-                            btn={{ title: "查看详情", path: 'http://mainnet.ddn.link/', out: true }}
+                            btn={{ title: "查看详情", path: 'http://mainnet.ddn.net/', out: true }}
                             // btn2={{title:"一键创建新链",path:'/'}}
                             content="提供用户浏览与查询区块链所有信息的工具，通过区块链浏览器，可以查看区块链的基本信息，区块高度等链的实时信息，区块信息，交易信息，节点信息，受托人信息，存证信息等。"
                         />
@@ -121,7 +121,7 @@ class Service extends React.Component {
                     <div className="service_main">
                         <ServiceContent2
                             title="区块链钱包"
-                            btn={{ title: "查看详情", path: 'http://wallet.ddn.link/', out: true }}
+                            btn={{ title: "查看详情", path: 'http://wallet.ddn.net/', out: true }}
                             content="区块链钱包里存储着我们的DDN信息，包括DDN地址(类似于你的银行卡账号)、私钥(类似于你的银行卡密码)，区块链钱包可以存储多个DDN地址以及每个DDN地址所对应的独立私钥。"
                         />
                         <ServiceContent
@@ -138,7 +138,7 @@ class Service extends React.Component {
                         />
                         <ServiceContent2
                             title="分布式云办公-DATM"
-                            btn={{ title: "查看详情", path: 'http://datm.ddn.link/', out: true }}
+                            btn={{ title: "查看详情", path: 'http://datm.ddn.net/', out: true }}
                             content="分布式团队远程协作利器远程协作，实时通讯，有效沟通，团队协作，任务管理，特色社区，海量任务，各行各业都有我们的身影，随时随地，移动办公。"
                         />
                     </div>

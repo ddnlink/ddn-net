@@ -50,17 +50,17 @@ class Development extends React.Component {
                     <img className="Development_banner_img" src={Images.Code} />
                 </div>
                 <div className="development_icon_bar">
-                    <a href="http://docs.ddn.link/zh-CN" className="development_icon_view" style={{ paddingLeft: '3.54vw' }}>
+                    <a href="http://docs.ddn.net/zh-CN" className="development_icon_view" style={{ paddingLeft: '3.54vw' }}>
                         <img src={Images.Document} className="development_icon" />
                         <div className="development_icon_title">文档</div>
                         <div className="development_icon_sub">查看DDN相关文档，快速开启DDN链上开发</div>
                     </a>
-                    <a href="http://docs.ddn.link/zh-CN/guide" className="development_icon_view">
+                    <a href="http://docs.ddn.net/zh-CN/guide" className="development_icon_view">
                         <img src={Images.Guide} className="development_icon" style={{ width: '6.35vw', height: '6.35vw' }} />
                         <div className="development_icon_title">指南</div>
                         <div className="development_icon_sub">跟随指南，开发实际案例应用</div>
                     </a>
-                    <a href="http://docs.ddn.link/zh-CN/api" className="development_icon_view">
+                    <a href="http://docs.ddn.net/zh-CN/api" className="development_icon_view">
                         <img src={Images.Jiekou} className="development_icon" style={{ width: '6.66vw', height: '6.35vw' }} />
                         <div className="development_icon_title">接口</div>
                         <div className="development_icon_sub">DDN完整，接口文档，快速定位功能和方法</div>
@@ -85,8 +85,8 @@ class Development extends React.Component {
                 <div className="datm_bar">
                     <div style={{width:'72.91vw',display:"flex",justifyContent:'space-between',margin:'0 auto',marginTop:'3vw'}}>
                         <div className="datm_col" >
-                        <a href="http://datm.ddn.link/" ><img className="datm" src={Images.DATM} /></a>
-                            <a href="http://datm.ddn.link/" className="datm_title">加入DATM社区</a>
+                        <a href="http://datm.ddn.net/" ><img className="datm" src={Images.DATM} /></a>
+                            <a href="http://datm.ddn.net/" className="datm_title">加入DATM社区</a>
                             <div className="datm_item">
                                 <div className="datm_title_sub">代码贡献者</div>
                                 <div className="datm_number">13</div>
@@ -111,7 +111,7 @@ class Development extends React.Component {
                     />
                     <ServiceContent2
                         title="DDN-UBL"
-                        btn={{ title: "开始学习", path: 'http://docs.ddn.link/zh-CN',out:true}}
+                        btn={{ title: "开始学习", path: 'http://docs.ddn.net/zh-CN',out:true}}
                         content="区块链属于近年新兴的概念，还未被人员广泛知晓，区块链技术相关资料相对匮乏，学习上手门槛相对较高。针对以上问题，DDN自主研发了DDN-UBL，区块链实验课程，专注于区块链教育教学、实验实训、人才培养，包含共识算法、P2P网络、交易、智能合约等模块，共计40多个实训任务，带你零门槛学习区块链技术，掌握区块链开发技能，跻身技术前沿。"
                     />
                 </div>

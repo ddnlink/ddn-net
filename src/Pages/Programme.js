@@ -129,7 +129,7 @@ class Programme extends React.Component {
         </div>
         <div className="banner3">
           <div className="banner3_title" onClick={this.contact.bind(this)}>联系我们</div>
-          <div className="banner3_number">support@ddn.link</div>
+          <div className="banner3_number">support@ddn.net</div>
         </div>
         <Footer />
       </div>
