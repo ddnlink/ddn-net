@@ -22,12 +22,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script type="text/javascript" src="/ddn-js-sdk-v3.6.1.min.js"></script>
+    <script>
+      DdnJS.init('0ab796cd', 'testnet')
+    </script>
   <title>DDN区块链</title>
 </head>
 
 <body id="App" >
   <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=rH1vqMUAmymkX3XV39rhmlz8XBpqpj2F"></script>
-  <script type="text/javascript" src="./ddn.browserify.js"></script>
+  <!-- <script type="text/javascript" src="./ddn.browserify.js"></script> -->
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--

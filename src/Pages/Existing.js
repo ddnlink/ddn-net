@@ -56,13 +56,10 @@ class Existing extends React.Component {
             size: newLimit, // 文档的大小
             type: 'text',
             url: 'ddn.net',
-            tags: 'evidence',
-            ext: 'china',
-            ext1: 12345,
-            ext2: new Date(),
+            tags: 'evidence'
         };
         console.log(evidencee)
-        let transaction = await DdnJS.evidence.createEvidence(evidencee, 'mixed load aerobic proud skull select ahead crawl outdoor casino noble vacant');
+        let transaction = await DdnJS.evidence.createEvidence(evidencee, 'affair gauge seed usage fun agent venture tooth evoke limb nephew night');
         console.log(transaction)
         const trs = JSON.stringify({ transaction });
         console.log(trs);
@@ -121,9 +118,9 @@ class Existing extends React.Component {
                             <div className="existing_shi">没有私钥?</div>
                             <a href='http://wallet.ddn.net/' className="existing_post">注册钱包</a>
                         </div>
-                        {/* <div onClick={this._save.bind(this)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '6.25vw' }}>
+                        <div onClick={this._save.bind(this)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '6.25vw' }}>
                             <div className="existing_save">存 证</div>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
                 <Footer />

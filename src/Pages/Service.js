@@ -147,7 +147,7 @@ class Service extends React.Component {
                     <div className="service_main" >
                         <ServiceContent2
                             title="信息上链存证"
-                            //btn={{ title: "立刻存证", path: '/Existing' }}
+                            btn={{ title: "立刻存证", path: '/Existing' }}
                             content="通过区块链实现数据的可信存储，结合基于数据多级加密和多维权限控制技术，解决电子数据易伪造、易篡改、难溯源、难校验等问题，联合共建可信生态联盟。"
                         />
                         <ServiceContent
