@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ddn/js-sdk": "^0.1.16",
+    "@ddn/js-sdk": "^1.0.6",
     "@ddn/node-sdk": "^0.4.15",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

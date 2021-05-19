@@ -7,12 +7,14 @@ import { withRouter, Link } from 'react-router-dom'
 import md5 from 'md5-nodejs';
 import moment from 'moment'
 import axios from 'axios'
+import DdnJS2 from '@ddn/js-sdk'
 
 class Existing extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            description: ''
+            description: '',
+            secret: '',
         };
     }
     async componentDidMount() {
@@ -42,13 +44,12 @@ class Existing extends React.Component {
         return size;
     }
     async _save() {
-        let { description } = this.state;
-        let DdnJS = window.DdnJS
+        let { description, secret } = this.state;
         let txt_length = this.getByty(description);
         var newLimit = this.change(txt_length);
 
         const evidencee = {
-            ipid: 'online',
+            ipid: description,
             title: 'ddn online evidence',
             description: description, // 文档的内容
             hash: md5(description),
@@ -59,12 +60,12 @@ class Existing extends React.Component {
             tags: 'evidence'
         };
         console.log(evidencee)
-        let transaction = await DdnJS.evidence.createEvidence(evidencee, 'affair gauge seed usage fun agent venture tooth evoke limb nephew night');
+        let transaction = await DdnJS2.evidence.createEvidence(evidencee, secret);
         console.log(transaction)
         const trs = JSON.stringify({ transaction });
         console.log(trs);
 
-        const peer_host = 'http://106.15.227.133:8001';
+        const peer_host = 'http://106.15.227.133:8000';
         const url = `${peer_host}/peer/transactions`;
         let config = {
             url: url,
@@ -77,8 +78,16 @@ class Existing extends React.Component {
                 nethash: '0ab796cd',
             },
           }
+
           return axios(config).then(result => {
-              console.log(result)
+                console.log(result);
+                console.log(result.data.success);
+                if (result.data.success) {
+                    alert("存证成功，可以登录钱包进行查看");
+                    // window.open(`http://106.15.227.133:8000/api/transactions/get?id=${result.data.transactionId}`);
+                } else {
+                    alert(result.data.error);
+                }
             return result;
           }).catch(err => {
             return err;
@@ -88,6 +97,11 @@ class Existing extends React.Component {
     _getContent(e) {
         this.setState({
             description: e.target.value
+        })
+    }
+    _getSecret(e) {
+        this.setState({
+            secret: e.target.value
         })
     }
     render() {
@@ -110,13 +124,13 @@ class Existing extends React.Component {
                             <div style={{ display: 'flex', flexDirection: 'row', marginTop: '1.56vw' }}>
                                 <div className="existing_message_title">请输入钱包私钥：</div>
                                 <div className="existing_input_block2">
-                                    <textarea placeholder="DDN私钥，用于创建存证交易" className="existing_input2"></textarea>
+                                    <textarea onBlur={this._getSecret.bind(this)} placeholder="DDN私钥，用于创建存证交易" className="existing_input2"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'row', marginTop: '1.3vw', marginLeft: '32.81vw',paddingBottom:'5vw' }}>
                             <div className="existing_shi">没有私钥?</div>
-                            <a href='http://wallet.ddn.net/' className="existing_post">注册钱包</a>
+                            <a href='http://wallet.testnet.ddn.net/' className="existing_post" target="_blank">注册钱包</a>(此功能目前仅开放测试网使用)
                         </div>
                         <div onClick={this._save.bind(this)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '6.25vw' }}>
                             <div className="existing_save">存 证</div>
